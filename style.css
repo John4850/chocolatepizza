@@ -1,0 +1,6 @@
+.hr {
+    background-image: url("./lab-assets/hr-img.png");
+    background-repeat: repeat-y repeat-x;
+    width: 95%;
+    height: 15px;
+}
