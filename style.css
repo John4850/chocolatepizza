@@ -1,8 +1,28 @@
-
+body {
+    width: 900px;
+    margin: auto;
+}
+#logo-area {
+    display: grid;
+    grid-template-rows: 30px 12px;
+    grid-template-columns: 45px 100px;
+    grid-template-areas: "logo" "delicious"
+                         "logo" "tagline";
+    float: left;
+}
+#logo-area img {
+    grid-area: logo;
+}
+h1 {
+    grid-area: delicious;
+}
+#social-icons {
+    float: right;
+}
 .hr {
     background-image: url("./lab-assets/hr-img.png");
     background-repeat: repeat-y repeat-x;
-    width: 95%;
+    width: 100%;
     height: 15px;
  }
  h1 {
@@ -13,6 +33,7 @@
     font-family: 'Fira Code', monospace;
     text-transform: uppercase;
     font-size: .4em;
+    grid-area: tagline;
  }
  h2 {
      font-family: Heebo;
@@ -49,5 +70,8 @@ h3 {
     color: white;
     padding: 15px 35px;
 }
-
-
+.recipe {
+    background-image: url('./lab-assets/list-bg.png');
+    background-size: 100%;
+    height: 305px;
+}
